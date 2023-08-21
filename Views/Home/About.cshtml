@@ -1,0 +1,18 @@
+@model IEnumerable<l04_assignment.Models.Staff>
+
+<h2>About Us</h2>
+
+<ul>
+    @foreach (var staff in Model)
+    {
+        <div class="staff-wrapper col-lg-9">
+            <div class="left">
+                <h3><strong>@staff.Name</strong></h3>
+                <p><strong>@staff.Title</strong></p>
+            </div>
+            <div class="right">
+                <p><strong>@staff.Description</strong></p>
+            </div>
+        </div>
+    }
+</ul>
